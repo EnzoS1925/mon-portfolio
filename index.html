@@ -4,92 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enzo Senicourt portfolio</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-        }
-
-        .navbar {
-            background-color: #333;
-            padding: 0;
-        }
-
-        .nav-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 20px;
-        }
-
-        .logo {
-            color: white;
-            font-size: 24px;
-            text-decoration: none;
-            padding: 15px 0;
-        }
-
-        .nav-links {
-            display: flex;
-            list-style: none;
-        }
-
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            padding: 15px 20px;
-            display: block;
-        }
-
-        .nav-links a:hover {
-            background-color: #555;
-        }
-
-        #btn {
-            display: none;
-        }
-
-        .menu-icon {
-            display: none;
-            cursor: pointer;
-            padding: 10px;
-        }
-
-        .menu-icon svg {
-            fill: white;
-        }
-
-        @media (max-width: 768px) {
-            .menu-icon {
-                display: block;
-            }
-
-            .nav-links {
-                position: absolute;
-                top: 60px;
-                left: 0;
-                right: 0;
-                background-color: #333;
-                flex-direction: column;
-                max-height: 0;
-                overflow: hidden;
-            }
-
-            #btn:checked ~ .nav-links {
-                max-height: 400px;
-            }
-
-            .nav-links a {
-                padding: 15px 20px;
-                border-bottom: 1px solid #555;
-            }
-        }
-    </style>
+    <!-- Lien vers le fichier CSS externe -->
+    <link rel="stylesheet" href="CSS/styles.css">
 </head>
 <body>
     <nav class="navbar">
@@ -117,55 +33,18 @@
     </nav>
 
     <h1>Welcome on my portfolio</h1>
-    <h2> I'm Enzo , a Student in Computer Sciences </h2>
+    <h2>I'm Enzo, a Student in Computer Sciences</h2>
 
     <!-- Bouton bleu -->
-<a href="contact.html" class="btn-bleu">Contact me</a>
+    <a href="contact.html" class="btn-bleu">Contact me</a>
 
-<style>
-.btn-bleu {
-  display: inline-block;
-  padding: 12px 24px;
-  background-color: #007BFF;
-  color: #fff; 
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
-  transition: background 0.3s ease;
-}
-</style>
+    <!-- Réseaux sociaux -->
+    <a href="https://www.linkedin.com/in/enzo-senicourt-5b0a01383/" target="_blank">
+      <img src="img/linkedin-svgrepo-com.svg" alt="LinkedIn" class="social-logo">
+    </a>
 
-<a href="https://www.linkedin.com/in/enzo-senicourt-5b0a01383/" target="_blank">
-  <img src="img/linkedin-svgrepo-com.svg" alt="LinkedIn" class="social-logo">
-</a>
-
-<a href="https://github.com/EnzoS1925" target="_blank">
-  <img src="img/github.svg" alt="GitHub" class="social-logo">
-</a>
-
-
-
-<style>
-.social-logo {
-  width: 40px;
-  height: 40px;
-  margin: 10px;
-  transition: transform 0.3s;
-}
-.social-logo:hover {
-  transform: scale(1.1);
-}
-
-</style>
-  <style>
-    body {
-      background-image: url('img/fond_site.jpg');
-      background-size: cover;       
-      background-repeat: no-repeat; 
-      background-position: center; 
-    }
-  </style>
-
+    <a href="https://github.com/EnzoS1925" target="_blank">
+      <img src="img/github.svg" alt="GitHub" class="social-logo">
+    </a>
 </body>
 </html>
-
