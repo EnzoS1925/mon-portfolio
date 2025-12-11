@@ -4,76 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projet : Agenda Simple</title>
-    <link rel="stylesheet" href="CSS/index.css">  
-    <link rel="stylesheet" href="CSS/agenda_simple.css">
+    <link rel="stylesheet" href="../CSS/styles.css"> 
+    <link rel="stylesheet" href="../CSS/agenda_simple.css">
 </head>
 <body>
-    <header>
-        <h1>🗓️ Projet : Agenda Simple</h1>
-        <p>Une application web minimaliste pour gérer vos tâches quotidiennes.</p>
-    </header>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">Enzo Senicourt</a>
+
+            <label for="btn" class="menu-icon">
+                <svg viewBox="0 0 100 80" width="40" height="40">
+                    <rect width="100" height="15" rx="8"></rect>
+                    <rect y="30" width="100" height="15" rx="8"></rect>
+                    <rect y="60" width="100" height="15" rx="8"></rect>
+                </svg>
+            </label>
+
+            <input type="checkbox" id="btn">
+
+            <ul class="nav-links">
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="../pages/competences.html">Compétences</a></li>
+                <li><a href="../pages/contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
     <main>
+        <div class="project-header-simple">
+             <h1>🗓️ Projet : Agenda Simple</h1>
+             <p>Un programme python capable de gérer des tâches simples du quotidient.</p>
+        </div>
+
         <section id="introduction">
             <h2>Présentation du Projet</h2>
-            <p><strong>Agenda Simple</strong> est une solution légère et intuitive conçue pour vous aider à organiser vos journées et à ne rien oublier. Que ce soit pour des rappels rapides ou la gestion d'une liste de tâches hebdomadaire, cet agenda est fait pour vous.</p>
+            <p class="texte-noir"><strong> Agenda Simple </strong>est une solution légère et intuitive conçue pour vous aider à organiser vos journées et à ne rien oublier. Que ce soit pour des rappels rapides ou la gestion d'une liste de tâches hebdomadaire, cet agenda est fait pour vous.</p>
         </section>
 
         <hr>
 
         <section id="features">
-            <h2>🚀 Fonctionnalités Clés</h2>
-            <ul>
-                <li>Ajout de Tâches : Enregistrez rapidement de nouvelles tâches avec un titre.</li>
-                <li>Suppression de Tâches : Éliminez les tâches terminées ou obsolètes en un clic.</li>
-                <li>Marquer comme Terminé : Changez visuellement l'état d'une tâche.</li>
-                <li>Interface Utilisateur Simple : Design épuré et facile à utiliser.</li>
-            </ul>
-        </section>
-
-        <hr>
-
-        <section id="demo">
-            <h2>👀 Aperçu / Démonstration</h2>
-            <div class="agenda-container">
-                <h3>Liste des Tâches</h3>
-                <div class="task-input">
-                    <input type="text" placeholder="Entrez une nouvelle tâche...">
-                    <button class="add-button">Ajouter</button>
-                </div>
-                <ul class="task-list">
-                    <li class="task-item">
-                        <span>Faire les courses</span>
-                        <button class="delete-button">Supprimer</button>
-                    </li>
-                    <li class="task-item completed">
-                        <span>Préparer la page HTML</span>
-                        <button class="delete-button">Supprimer</button>
-                    </li>
-                    <li class="task-item">
-                        <span>Appeler M. Dupont</span>
-                        <button class="delete-button">Supprimer</button>
-                    </li>
-                </ul>
-            </div>
-            <p class="note">Les fonctionnalités d'ajout/suppression dans cet aperçu nécessitent du JavaScript pour être opérationnelles.</p>
-        </section>
-
-        <hr>
-
-        <section id="technologies">
-            <h2>🛠️ Technologies Utilisées</h2>
-            <p>Ce projet est développé en utilisant les technologies web fondamentales :</p>
-            <ul>
-                <li>HTML5 : Pour la structure sémantique.</li>
-                <li>CSS3 : Pour le style et le design.</li>
-                <li>JavaScript : Pour la logique interactive.</li>
-            </ul>
+            <h2>🚀 Fonctionnalités Importante</h2>
+                <p class="texte-noir">Ajout de Tâches : Enregistrez rapidement de nouvelles tâches avec un titre.</p>
+                <p class="texte-noir">Suppression de Tâches : Éliminez les tâches terminées ou obsolètes en un clic.</p>
+                <p class="texte-noir">Affichage des tâches en cours via l'utilisation de numéro.</p>
+                <p class="texte-noir">Interface Utilisateur Simple : Utilisation dans le terminal.</p>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2025 Votre Nom/Nom du Projet. Tous droits réservés.</p>
+    <footer class="socials">
+        <a href="https://www.linkedin.com/in/enzo-senicourt-5b0a01383/" target="_blank">
+            <img src="../img/linkedin-svgrepo-com.svg" alt="LinkedIn" class="social-logo">
+        </a>
+        <a href="https://github.com/EnzoS1925" target="_blank">
+            <img src="../img/github.svg" alt="GitHub" class="social-logo">
+        </a>
     </footer>
 </body>
 </html>

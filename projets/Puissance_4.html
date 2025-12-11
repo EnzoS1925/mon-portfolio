@@ -1,28 +1,43 @@
-<!DOCTYPE html>
+
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projet Puissance 4</title>
-    <link rel="stylesheet" href="CSS/styles.css">
-
-    <!-- Tu peux aussi ajouter directement le style ici si tu veux -->
-    <style>
-        .black-text {
-            color: black;
-        }
-    </style>
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="../CSS/puissance4.css">
 </head>
 <body>
-    <header>
-        <h1 class="black-text">Projet Puissance 4 en Python</h1>
-        <p class="black-text">Un jeu classique recréé en Python.</p>
-    </header>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">Enzo Senicourt</a>
+
+            <label for="btn" class="menu-icon">
+                <svg viewBox="0 0 100 80" width="40" height="40">
+                    <rect width="100" height="15" rx="8"></rect>
+                    <rect y="30" width="100" height="15" rx="8"></rect>
+                    <rect y="60" width="100" height="15" rx="8"></rect>
+                </svg>
+            </label>
+
+            <input type="checkbox" id="btn">
+
+            <ul class="nav-links">
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="../pages/competences.html">Compétences</a></li>
+                <li><a href="../pages/contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="project-header-simple">
+        <h1>Projet Puissance 4 en Python</h1>
+        <p>Un jeu classique recréé en Python.</p>
+    </div>
 
     <main>
         <section id="presentation">
-            <h2 class="black-text">Présentation du projet</h2>
-            <p class="black-text">
+            <h2>🗓️Présentation du projet</h2>
+            <p>
                 Ce projet consiste à programmer le jeu Puissance 4 en langage Python.
                 L’objectif était de permettre à deux joueurs de s’affronter en tour par tour, avec une
                 vérification automatique des conditions de victoire (horizontal, vertical et diagonal).
@@ -30,25 +45,33 @@
         </section>
 
         <section id="fonctionnalites">
-            <h2 class="black-text">Fonctionnalités principales</h2>
-            <ul class="black-text">
+            <h2>🚀Fonctionnalités principales</h2>
+            <ul>
                 <li>Affichage du plateau de jeu dans la console</li>
                 <li>Gestion des tours des joueurs</li>
                 <li>Détection automatique du gagnant</li>
             </ul>
         </section>
 
+
+
         <section id="conclusion">
-            <h2 class="black-text">Conclusion</h2>
-            <p class="black-text">
+            <h2>Conclusion</h2>
+            <p>
                 Ce projet m’a permis de consolider mes compétences en Python, en particulier sur la
                 manipulation de listes, les boucles et la logique de programmation.
             </p>
         </section>
     </main>
 
-    <footer>
-        <p class="black-text">Réalisé par Enzo Senicourt guidé par M. Lewandowski</p>
+    <footer class="socials">
+
+        <a href="https://www.linkedin.com/in/enzo-senicourt-5b0a01383/" target="_blank">
+            <img src="../img/linkedin-svgrepo-com.svg" alt="LinkedIn" class="social-logo">
+        </a>
+        <a href="https://github.com/EnzoS1925" target="_blank">
+            <img src="../img/github.svg" alt="GitHub" class="social-logo">
+        </a>
     </footer>
 </body>
 </html>
