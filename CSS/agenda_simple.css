@@ -1,28 +1,19 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f7f6;
-    color: #333;
-}
-
-header {
-    background-color: #4CAF50;
-    color: white;
+.project-header-simple {
     padding: 30px 20px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 40px auto 0;
+    color: white;
 }
 
-header h1 {
-    margin-top: 0;
+.project-header-simple h1 {
     font-size: 2.5em;
+    margin-top: 0;
 }
 
 main {
     max-width: 900px;
-    margin: 40px auto;
+    margin: 0 auto;
     padding: 0 20px;
 }
 
@@ -80,13 +71,8 @@ hr {
     border: none;
     padding: 10px 15px;
     border-radius: 4px;
-    cursor: pointer;
+    cursor: default;
     font-size: 1em;
-    transition: background-color 0.3s;
-}
-
-.add-button:hover {
-    background-color: #45a049;
 }
 
 .task-list {
@@ -102,13 +88,24 @@ hr {
     border-bottom: 1px dashed #e0e0e0;
 }
 
-.task-item:last-child {
-    border-bottom: none;
+.task-item span {
+    flex-grow: 1;
+    margin-right: 15px;
 }
 
-.task-item.completed span {
-    text-decoration: line-through;
-    color: #9e9e9e;
+.actions {
+    display: flex;
+    gap: 5px;
+}
+
+.complete-button {
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: default;
+    font-size: 0.8em;
 }
 
 .delete-button {
@@ -117,13 +114,17 @@ hr {
     border: none;
     padding: 5px 10px;
     border-radius: 4px;
-    cursor: pointer;
+    cursor: default;
     font-size: 0.8em;
-    transition: background-color 0.3s;
 }
 
-.delete-button:hover {
-    background-color: #d32f2f;
+.task-item.completed span {
+    text-decoration: line-through;
+    color: #9e9e9e;
+}
+
+.task-item.completed .complete-button {
+    background-color: #388e3c;
 }
 
 .note {
@@ -136,11 +137,6 @@ hr {
     border-radius: 4px;
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-    border-top: 1px solid #eee;
-    color: #777;
-    background-color: #ffffff;
+.texte-noir {
+    color: black;
 }
