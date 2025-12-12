@@ -1,49 +1,42 @@
-/*
-Ce fichier gère les styles spécifiques à la page Puissance 4.
-Il s'appuie sur 'styles.css' pour le fond et la navigation.
-*/
 
-/* 1. Entête du projet (Identique à Agenda Simple) */
 .project-header-simple {
     padding: 30px 20px;
     text-align: center;
     max-width: 900px;
     margin: 40px auto 0;
-    color: white; /* Conserve la couleur blanche définie dans styles.css pour le texte sur l'image de fond */
+    color: white; 
 }
 
 .project-header-simple h1 {
     font-size: 2.5em;
     margin-top: 0;
-    color: white; /* S'assurer que le titre est bien blanc */
+    color: white; 
 }
 
-/* 2. Conteneur principal (Identique à Agenda Simple) */
 main {
     max-width: 900px;
     margin: 0 auto;
     padding: 0 20px;
-    padding-bottom: 50px; /* Ajout d'un padding pour l'espace au bas de la page */
+    padding-bottom: 50px; 
 }
 
-/* 3. Style des sections (Identique à Agenda Simple) */
+
 section {
     margin-bottom: 40px;
     padding: 20px;
-    background-color: white; /* Fond blanc pour les sections de contenu */
+    background-color: white; 
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    color: #333; /* Texte noir/gris foncé à l'intérieur de la section blanche */
+    color: #333; 
 }
 
 section h2 {
-    color: #4CAF50; /* Couleur verte pour les titres des sections */
+    color: #4CAF50; 
     border-bottom: 2px solid #e0e0e0;
     padding-bottom: 10px;
     margin-top: 0;
 }
 
-/* 4. Style pour les listes non ordonnées (<ul>) */
 section ul {
     padding-left: 20px;
     list-style-type: disc;
@@ -53,11 +46,10 @@ section ul li {
     margin-bottom: 8px;
 }
 
-/* 5. Style pour l'aperçu du code */
 .code-container {
-    background-color: #272822; /* Fond sombre pour l'éditeur de code (comme Monokai) */
+    background-color: #272822; 
     border-radius: 6px;
-    overflow-x: auto; /* Permet le défilement horizontal si le code est trop long */
+    overflow-x: auto; 
     padding: 15px;
     margin-top: 20px;
 }
@@ -69,28 +61,27 @@ section ul li {
 .code-container code {
     font-family: 'Consolas', 'Courier New', monospace;
     font-size: 0.9em;
-    color: #f8f8f2; /* Texte principal blanc cassé */
-    display: block; /* S'assure que le bloc de code remplit le conteneur */
+    color: #f8f8f2; 
+    display: block; 
 }
 
-/* Styles pour simuler la coloration syntaxique */
+
 .code-container code .keyword {
-    color: #f92672; /* Mots-clés (def, for, if, return) */
+    color: #f92672; 
 }
 
 .code-container code .number {
-    color: #ae81ff; /* Nombres */
+    color: #ae81ff; 
 }
 
-/* Ajout de styles aux éléments spécifiques du code HTML */
 .code-container code .keyword:first-child {
     color: #f92672;
 }
 
 .code-container code .function-name {
-    color: #a6e22e; /* Nom des fonctions */
+    color: #a6e22e; 
 }
 
 .code-container code .comment {
-    color: #75715e; /* Commentaires */
+    color: #75715e;
 }
